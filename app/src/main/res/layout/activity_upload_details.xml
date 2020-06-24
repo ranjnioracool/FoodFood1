@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".upload_details"
+    android:background="#000"
+    android:padding="15dp">
+    <Button
+        android:id="@+id/btnupload"
+        android:layout_width="match_parent"
+        android:layout_marginLeft="35dp"
+        android:layout_marginRight="35dp"
+        android:layout_above="@+id/tvhomescreen"
+        android:layout_height="60dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="5dp"
+        android:background="@drawable/greenbuttonwithwhiteborder"
+        android:text="Add to menu"
+        android:textSize="30sp"
+         />
+    <Button
+        android:id="@+id/btnchoosefile"
+        android:layout_width="150dp"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="15dp"
+        android:layout_height="40dp"
+        android:text="Choose File"
+        android:layout_centerHorizontal="true"
+        android:textSize="20sp"
+        android:background="@drawable/greenbuttonroundbackground"/>
+    <EditText
+        android:background="@drawable/edittextoutlines"
+        android:id="@+id/etfdname"
+        android:layout_width="match_parent"
+        android:layout_below="@+id/btnchoosefile"
+        android:layout_height="45dp"
+        android:hint="Enter food name"
+        android:textColorHint="#fff"
+        android:textAlignment="center"
+        android:layout_centerInParent="true"
+        android:gravity="center"
+        android:textColor="#fff"
+        android:textSize="22sp"
+        android:layout_marginTop="15dp"
+        android:layout_marginStart="30dp"
+        android:layout_marginRight="30dp"
+        android:layout_marginEnd="30dp"
+        android:layout_marginLeft="30dp" />
+    <EditText
+        android:background="@drawable/edittextoutlines"
+        android:id="@+id/etfdprice"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:layout_below="@+id/etfdname"
+        android:text="Rs."
+        android:hint="Price"
+        android:textColorHint="#fff"
+        android:textAlignment="center"
+        android:gravity="center"
+        android:textColor="#fff"
+        android:textSize="22sp"
+        android:layout_marginTop="5dp"
+        android:layout_marginStart="30dp"
+        android:layout_marginRight="30dp"
+        android:layout_marginEnd="30dp"
+        android:layout_marginLeft="30dp" />
+
+    <ProgressBar
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        style="@style/Widget.AppCompat.ProgressBar.Horizontal"
+        android:layout_above="@id/btnupload"
+        android:id="@+id/progress_bar"
+        android:background="#fff"
+        android:layout_marginBottom="5dp"/>
+    <ImageView
+        android:id="@+id/myimageview"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/etfdprice"
+        android:layout_above="@+id/progress_bar"
+        android:layout_marginTop="15dp"
+        android:layout_marginBottom="15dp"/>
+    <TextView
+        android:id="@+id/tvhomescreen"
+        android:layout_width="100dp"
+        android:layout_height="30dp"
+       android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:text="back to home"
+        android:background="@drawable/greenbuttonwithwhiteborder"
+        android:textColor="#000"
+        android:layout_marginBottom="5dp"
+        android:gravity="center"/>
+
+
+</RelativeLayout>

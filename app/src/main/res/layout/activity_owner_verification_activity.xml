@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".owner_verification_activity"
+    android:background="#000">
+    <ImageView
+        android:layout_below="@+id/tvsignup"
+        android:layout_width="300dp"
+        android:id="@+id/imlogo"
+        android:layout_height="150dp"
+        android:background="@drawable/foodfoo"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="25dp"/>
+    <TextView
+        android:layout_width="match_parent"
+        android:id="@+id/tvsignup"
+        android:layout_height="90dp"
+        android:text="LOGIN"
+        android:textSize="70sp"
+        android:textColor="#00ff7f"
+        android:layout_marginTop="30dp"
+        android:padding="2dp"
+        android:textStyle="bold"
+        android:textAlignment="center"
+        android:gravity="center"/>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:text="AUTHORISED:Only for restraunt owner and staff"
+        android:textSize="15sp"
+        android:textColor="#ff0000"
+        android:textStyle="bold"
+        android:gravity="center"
+        android:layout_marginTop="10dp"/>
+
+
+
+
+    <EditText
+        android:background="@drawable/edittextoutlines"
+        android:id="@+id/etusername1"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_below="@+id/imlogo"
+        android:hint="Username"
+        android:textColorHint="#fff"
+        android:textAlignment="center"
+        android:gravity="center"
+        android:textColor="#fff"
+        android:textSize="22sp"
+        android:layout_marginStart="20dp"
+        android:layout_marginRight="15dp"
+        android:layout_marginEnd="20dp"
+        android:layout_marginTop="35dp"/>
+    <ImageView
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:layout_below="@id/imlogo"
+        android:layout_alignStart="@+id/etusername1"
+        android:layout_alignLeft="@+id/etusername1"
+        android:layout_marginTop="35dp"
+        android:background="@drawable/ic_account_"/>
+    <EditText
+        android:background="@drawable/edittextoutlines"
+        android:id="@+id/etpassword1"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_below="@+id/etusername1"
+        android:hint="Password"
+        android:textColorHint="#fff"
+        android:textAlignment="center"
+        android:inputType="textPassword"
+        android:gravity="center"
+        android:textColor="#fff"
+        android:textSize="22sp"
+        android:layout_marginStart="20dp"
+        android:layout_marginRight="15dp"
+        android:layout_marginEnd="20dp"
+        android:layout_marginTop="9dp"/>
+    <ImageView
+        android:layout_width="63dp"
+        android:layout_height="60dp"
+        android:layout_below="@id/etusername1"
+        android:layout_alignStart="@+id/etpassword1"
+        android:layout_alignLeft="@+id/etpassword1"
+        android:layout_marginTop="9dp"
+        android:background="@drawable/ic_lock_"/>
+
+
+    <Button
+        android:id="@+id/login"
+        android:layout_width="300dp"
+        android:layout_height="70dp"
+        android:layout_below="@id/etpassword1"
+        android:layout_centerInParent="true"
+        android:text="LOGIN"
+        android:textColor="#000"
+        android:textSize="30sp"
+        android:layout_marginTop="30dp"
+        android:background="@drawable/greenbuttonwithwhiteborder"/>
+
+</RelativeLayout>

@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:background="#000">
+    <ImageView
+        android:layout_marginTop="25dp"
+        android:layout_width="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:layout_height="175dp"
+        android:src="@drawable/foodfoo"/>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Food Food"
+        android:textColor="#000"
+        android:gravity="center"
+        android:textSize="30sp"
+        android:textStyle="bold"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/greenbuttonroundbackground"/>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Created by Rajiv Ltd."
+        android:textColor="@color/colorgreen"
+        android:textSize="20dp"
+        android:textStyle="italic"
+        android:gravity="center"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="25dp"/>
+</LinearLayout>

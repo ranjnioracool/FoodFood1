@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".CartActivity">
+
+    <androidx.drawerlayout.widget.DrawerLayout
+        android:id="@+id/drawer2"
+        tools:openDrawer="start"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+            <androidx.appcompat.widget.Toolbar
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/toolbar2"
+                app:title="FOOD FOOD"
+                android:gravity="start"
+                app:titleTextColor="#000"
+                android:background="@drawable/toolbar_background"/>
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_below="@+id/toolbar2">
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="#1234"
+                    android:padding="10dp">
+                    <LinearLayout
+                        android:id="@+id/ll"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:layout_alignParentTop="true"
+                        android:gravity="center">
+
+                        <Button
+                            android:id="@+id/btnclearcart"
+                            android:layout_width="wrap_content"
+                            android:layout_marginRight="10dp"
+                            android:layout_height="60dp"
+                            android:text="CLEAR CART"
+                            android:textStyle="bold"
+                            android:padding="13dp"
+                            android:textSize="20sp"
+                            android:background="@drawable/greenbuttonwithwhiteborder"/>
+                        <Button
+
+                            android:id="@+id/btnaddmoreitems"
+                            android:layout_width="wrap_content"
+                            android:padding="13dp"
+                            android:layout_height="60dp"
+                            android:text="Add Items"
+                            android:textStyle="bold"
+                            android:textSize="20sp"
+                            android:layout_marginLeft="10dp"
+                            android:background="@drawable/greenbuttonwithwhiteborder"/>
+                    </LinearLayout>
+
+                    <Button
+                        android:id="@+id/btnplaceorder"
+                        android:layout_alignParentBottom="true"
+                        android:layout_width="match_parent"
+                        android:layout_height="80dp"
+                        android:text="PLACE ORDER"
+                        android:textStyle="bold"
+                        android:textSize="35sp"
+                        android:background="@drawable/greenbuttonwithwhiteborder"/>
+                    <androidx.recyclerview.widget.RecyclerView
+                        android:id="@+id/recycler_view_cart"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_below="@+id/ll"
+                        android:layout_above="@+id/btnplaceorder"
+                        android:layout_marginTop="8dp"
+                        android:layout_marginBottom="15dp"/>
+
+                </RelativeLayout>
+
+
+            </RelativeLayout>
+
+        </RelativeLayout>
+        <com.google.android.material.navigation.NavigationView
+            android:layout_width="300dp"
+            android:layout_height="match_parent"
+            android:id="@+id/navmenu2"
+            app:menu="@menu/iconmenu"
+            app:headerLayout="@layout/nav_header"
+            android:layout_gravity="start"/>
+
+    </androidx.drawerlayout.widget.DrawerLayout>
+</RelativeLayout>

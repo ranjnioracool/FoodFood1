@@ -1,0 +1,188 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".OpenDetailsActivity"
+    android:orientation="vertical"
+    android:background="#000">
+    <androidx.drawerlayout.widget.DrawerLayout
+        android:id="@+id/drawer1"
+        tools:openDrawer="start"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+            <androidx.appcompat.widget.Toolbar
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/toolbar1"
+                app:title="FOOD FOOD"
+                android:gravity="start"
+                app:titleTextColor="#000"
+                android:background="@drawable/toolbar_background"/>
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_below="@+id/toolbar1">
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical"
+                    android:padding="15dp">
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="25dp"
+                        android:orientation="horizontal"
+                        android:layout_marginBottom="10dp"
+                        android:gravity="center">
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="25dp"
+                            android:text="PHONE NO."
+                            android:textSize="20sp"
+                            android:textStyle="bold"
+                            android:textColor="@color/colorgreen"/>
+                        <EditText
+                            android:id="@+id/etmobilenumber"
+                            android:layout_marginLeft="10dp"
+                            android:layout_width="125dp"
+                            android:layout_height="25dp"
+                            android:background="#fff"
+                            android:textSize="18sp"
+                            android:textStyle="bold"
+                            android:textAlignment="center"
+                            android:gravity="center"/>
+                    </LinearLayout>
+
+
+                    <ImageView
+                        android:id="@+id/imgviewopendetails"
+                        android:layout_width="match_parent"
+                        android:layout_height="250dp"/>
+                    <TextView
+                        android:id="@+id/tvnameopendetail"
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp"
+                        android:layout_marginTop="10dp"
+                        android:text="Name"
+                        android:textSize="30sp"
+                        android:textColor="@color/colorgreen"
+                        android:textAlignment="center"
+                        android:gravity="center"
+                        android:textStyle="bold"/>
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:layout_marginTop="3dp"
+                        android:layout_gravity="center">
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="PRICE:"
+                            android:textSize="25sp"
+                            android:textStyle="bold"
+                            android:textColor="#fff"/>
+                        <TextView
+                            android:id="@+id/tvpriceopendetail"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="test2"
+                            android:textSize="25sp"
+                            android:textStyle="bold"
+                            android:textColor="@color/colorgreen"
+                            android:layout_marginLeft="10dp"/>
+                    </LinearLayout>
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:layout_marginTop="10dp"
+                        android:layout_gravity="center"
+                        android:padding="5dp">
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="QUANTITY"
+                            android:textSize="22sp"
+                            android:textStyle="bold"
+                            android:textColor="#fff"/>
+                        <Button
+                            android:id="@+id/btnminus"
+                            android:layout_width="65dp"
+                            android:background="@drawable/greenbuttonwithwhiteborder"
+                            android:layout_height="40dp"
+                            android:text="-"
+                            android:textSize="20sp"
+                            android:textStyle="bold"
+                            android:layout_marginLeft="5dp"
+                            android:layout_marginRight="5dp"/>
+                        <TextView
+                            android:id="@+id/tvquantiyopendetail"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="1"
+                            android:textSize="25sp"
+                            android:textStyle="bold"
+                            android:textColor="@color/colorgreen"
+                            android:layout_marginLeft="5dp"
+                            android:layout_marginRight="5dp"/>
+                        <Button
+                            android:id="@+id/btnplus"
+                            android:layout_width="65dp"
+                            android:background="@drawable/greenbuttonwithwhiteborder"
+                            android:layout_height="40dp"
+                            android:text="+"
+                            android:textSize="20sp"
+                            android:textStyle="bold"
+                            android:layout_marginLeft="5dp"
+                            android:layout_marginRight="5dp"/>
+                    </LinearLayout>
+
+                    <Button
+                        android:id="@+id/btnaddtocart"
+                        android:layout_width="match_parent"
+                        android:layout_height="60dp"
+                        android:text="ADD TO ORDER"
+                        android:textStyle="bold"
+                        android:textSize="27sp"
+                        android:background="@drawable/greenbuttonwithwhiteborder"
+                        android:layout_marginTop="25dp"/>
+                    <Button
+                        android:id="@+id/btnshowcart"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/ic_restaurant_menu"
+                        android:layout_gravity="center_horizontal"
+                        android:layout_marginTop="5dp"/>
+                    <TextView
+                        android:id="@+id/tvbacktomenu"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Back To Menu"
+                        android:textSize="13sp"
+                        android:textColor="@color/colorgreen"
+                        android:layout_gravity="center" />
+
+                </LinearLayout>
+
+
+            </RelativeLayout>
+
+        </RelativeLayout>
+        <com.google.android.material.navigation.NavigationView
+            android:layout_width="300dp"
+            android:layout_height="match_parent"
+            android:id="@+id/navmenu1"
+            app:menu="@menu/iconmenu3"
+            app:headerLayout="@layout/nav_header"
+            android:layout_gravity="start"/>
+
+    </androidx.drawerlayout.widget.DrawerLayout>
+
+
+
+</RelativeLayout>
